@@ -76,8 +76,7 @@ class CRDT:
             if not node.children:
                 return [node]
             document = []
-            if not node.tombstone:
-                document.append(node)
+            document.append(node)
             for child in reversed(node.children):
                 document.extend(dfs(child))
             return document
