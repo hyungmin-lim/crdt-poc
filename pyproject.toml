@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "crdt"
+version = "0.1.0"
+description = ""
+authors = ["hyungmin <hyungmin@hyperithm.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.8.2"
+ruff = "^0.5.6"
+pyright = "^1.1.374"
+pytest = "^8.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
